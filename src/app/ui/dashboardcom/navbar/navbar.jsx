@@ -5,7 +5,6 @@ const navbar = () => {
     const drawerWidth=300
   return (
     <AppBar
-        position="fixed"
         sx={{
           width: `calc(100% - ${drawerWidth}px)`,
           ml: `${drawerWidth}px `,
