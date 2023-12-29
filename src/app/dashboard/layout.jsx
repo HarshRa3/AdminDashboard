@@ -15,14 +15,13 @@ const layout = ({ children }) => {
       spacing={10}
         sx={{
           width: "100%",
-          // height: "100vh",
           ml:'10px'
         }}
       >
         <Box>
           <Navbar />
         </Box>
-        <Box>{children}</Box>
+        <Box sx={{width:'100%'}}>{children}</Box>
       </Stack>
     </Box>
   );

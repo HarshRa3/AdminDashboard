@@ -1,10 +1,29 @@
-'use client'
+"use client";
 import React from "react";
 
 import { Line } from "react-chartjs-2";
-import { Chart as ChartJS, CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend, Filler } from "chart.js";
+import {
+  Chart as ChartJS,
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Title,
+  Tooltip,
+  Legend,
+  Filler,
+} from "chart.js";
 
-ChartJS.register(CategoryScale, LinearScale, PointElement, LineElement, Title, Tooltip, Legend, Filler);
+ChartJS.register(
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Title,
+  Tooltip,
+  Legend,
+  Filler
+);
 
 const LineGraph = () => {
   const sampleData = [43, 40, 50, 40, 70, 40, 45, 33, 40, 60, 40, 50, 36];
@@ -16,7 +35,7 @@ const LineGraph = () => {
         borderColor: "white",
         pointRadius: 0,
         fill: true,
-        backgroundColor: '#154c4c',
+        backgroundColor: "#154c4c",
         lineTension: 0.4,
         data: sampleData,
         borderWidth: 1,
@@ -78,7 +97,7 @@ const LineGraph = () => {
     border: "1px solid #C4C4C4",
     borderRadius: "0.375rem",
     padding: "0.5rem",
-    backgroundColor:'#151c3c'
+    backgroundColor: "#151c3c",
   };
 
   return (

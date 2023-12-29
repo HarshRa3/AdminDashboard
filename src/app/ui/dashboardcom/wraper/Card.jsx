@@ -7,7 +7,7 @@ import SvgIcon from '@mui/joy/SvgIcon';
 
 export default function CardInvertedColors() {
   return (
-    <Card variant="solid" invertedColors  sx={{ width: "34%", bgcolor: "#151c3c", borderRadius: "10px",color:'white',display:'flex',alignItems:"center"}}>
+    <Card variant="solid" invertedColors  sx={{ width: {sx:'100%',lg:"34%"}, bgcolor: "#151c3c", borderRadius: "10px",color:'white',display:'flex',alignItems:"center"}}>
       <CardContent orientation="horizontal">
         <CircularProgress size="lg" determinate value={30}>
           <SvgIcon>
@@ -27,7 +27,7 @@ export default function CardInvertedColors() {
           </SvgIcon>
         </CircularProgress>
         <CardContent>
-          <Typography level="body-md">Gross profit</Typography>
+          <Typography level="body-md">Total Users</Typography>
           <Typography level="h2">$ 432.6M</Typography>
           <Typography variant='body2' >$ 12M</Typography>
         </CardContent>
